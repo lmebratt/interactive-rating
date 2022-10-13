@@ -1,0 +1,162 @@
+:root {
+    --background: #121417;
+    --state: #252d37;
+    --input: #2c3641;
+    --hover: #7c8798;
+    --secondary: #959eac;
+    --primary: #ffffff;
+    --submit: #fb7413;
+    --paragraph: 1.5rem;
+    --title: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--background);
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 97%;
+}
+.rating-state {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--state);
+    border-radius: 16px;
+    width: 340px;
+    height: 360px;
+}
+.rating-state picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--input);
+    margin: 0 20px 20px 20px;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+.rating-state picture:hover {
+    background-color: var(--hover);
+}
+.rating-state picture img {
+    width: 12px;
+    height: 12px;
+}
+.rating-state h1 {
+    color: var(--primary);
+    font-size: var(--title);
+    margin: 0 20px 20px 20px;
+}
+.rating-state > p {
+    color: var(--secondary);
+    font-size: var(--paragraph);
+    margin: 0 20px 20px 20px;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    align-self: center;
+    width: 100%;
+    height: 126px;
+}
+.form span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: var(--paragraph);
+    background-color: var(--input);
+    color: var(--secondary);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.form span:hover {
+    background-color: var(--hover);
+}
+.form input:checked ~ span {
+    background-color: var(--submit);
+    color: var(--primary);
+}
+.form > button {
+    font-weight: 700;
+    border-radius: 24px;
+    background-color: var(--submit);
+    color: var(--primary);
+    border: none;
+    width: 100%;
+    height: 36px;
+    margin: 16px;
+}
+.form > button:active {
+    background-color: var(--primary);
+    color: var(--submit);
+}
+.rate-selector {
+    display: none;
+}
+.thank-you-state { 
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--state);
+    border-radius: 16px;
+    width: 340px;
+    height: 360px;
+    padding: 20px 0;
+}
+.thank-you-state img {
+    width: 120px;
+}
+.thank-you-state p:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 28px;
+    width: 180px;
+    border-radius: 8px;
+    background-color: var(--input);
+    color: var(--submit);
+    font-size: var(--paragraph);
+}
+.thank-you-state p:nth-child(3) {
+    color: var(--primary);
+    font-size: var(--title);
+}
+.thank-you-state p:nth-child(4) {
+    text-align: center;
+    color: var(--secondary);
+    font-size: var(--paragraph);
+    margin: 0 20px;
+}
+.attribution { font-size: 11px; text-align: center; color: var(--secondary);}
+.attribution a { color: var(--primary); }
+
