@@ -49,8 +49,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/interactive-rating-component-Vhocd3CNA7)
+- Live Site URL: [Interactive rating component](https://interactive-ratinglm.netlify.app/)
 
 ## My process
 
@@ -61,11 +61,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -74,33 +69,86 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="form">
+      <label for="one">
+        <input type="radio" name="rate" class="rate-selector" id="one">
+        <span>1</span>
+      </label>
+      <label for="two">
+        <input type="radio" name="rate" class="rate-selector" id="two">
+        <span>2</span>
+      </label>
+      <label for="three">
+        <input type="radio" name="rate" class="rate-selector" id="three">
+        <span>3</span>
+      </label>
+      <label for="four">
+        <input type="radio" name="rate" class="rate-selector" id="four">
+        <span>4</span>
+      </label>
+      <label for="five">
+        <input type="radio" name="rate" class="rate-selector" id="five">
+        <span>5</span>
+      </label>
+      <button id="button-submit">S U B M I T</button>
+    </section>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.form span:hover {
+    background-color: var(--hover);
+}
+.form input:checked ~ span {
+    background-color: var(--submit);
+    color: var(--primary);
+}
+.form > button {
+    font-weight: 700;
+    border-radius: 24px;
+    background-color: var(--submit);
+    color: var(--primary);
+    border: none;
+    width: 100%;
+    height: 36px;
+    margin: 16px;
+}
+.form > button:active {
+    background-color: var(--primary);
+    color: var(--submit);
+}
+.rate-selector {
+    display: none;
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function selector() {
+    inputOne = document.getElementById("one")    
+    inputTwo = document.getElementById("two")
+    inputThree = document.getElementById("three") 
+    inputFour = document.getElementById("four") 
+    inputFive = document.getElementById("five")
+
+    if (inputOne.checked) {
+        spanRate.innerHTML = "1"
+    } else if (inputTwo.checked) {
+        spanRate.innerHTML = "2"
+    } else if (inputThree.checked) {
+        spanRate.innerHTML = "3"
+    } else if (inputFour.checked) {
+        spanRate.innerHTML = "4"
+    } else if (inputFive.checked) {
+        spanRate.innerHTML = "5"
+    } else {
+        spanRate.innerHTML = "NaN"
+    }
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+This is just the beginning, I will continue to strengthen my knowledge to become a Full Stack Web Developer.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Luis M. Ebratt](https://lmebratt.github.io/)
+- Frontend Mentor - [@lmebratt](https://www.frontendmentor.io/profile/lmebratt)
+- Twitter - [@RazorLm](https://twitter.com/RazorLm)
