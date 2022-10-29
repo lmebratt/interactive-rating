@@ -50,7 +50,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/interactive-rating-component-Vhocd3CNA7)
-- Live Site URL: [Interactive rating component](https://interactive-ratinglm.netlify.app/)
+- Live Site URL: [Interactive rating component](https://lmebratt.github.io/interactive-rating/)
 
 ## My process
 
